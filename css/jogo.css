@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #115f7c;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo da barra lateral */
+.sidebar {
+  float: left;
+  width: auto;
+  height: 500px;
+  background-color: #f1f1f1;
+  border: 1px solid #a2a2a2;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sidebar img {
+  width: 50px;
+  height: auto;
+}
+
+.score {
+  font-size: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilo do cronômetro */
+.timer td {
+  background: url("../imagens/cronometro.png") no-repeat center center;
+  background-size: contain;
+  width: 140px;
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer span {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Estilo do cenário do jogo */
+#cenario {
+  float: left;
+  width: 600px;
+  height: 500px;
+  background: url("../imagens/cenario.png") no-repeat center bottom;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-voltar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5px;
+}
+.botao button {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #1996c3;
+  color: #f1f1f1;
+  border-color: aliceblue;
+  margin-bottom: 10px;
+}
+.botao button:hover {
+  background: #1681a8;
+}
